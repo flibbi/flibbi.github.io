@@ -58,7 +58,12 @@ table {
   margin: 0px auto;
   position: relative;
   min-height: 100vh;
-}
+#body{
+  font-family: 'Asap', roboto, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #150c21;
+}}
 
 a {
   text-decoration: none;
@@ -166,7 +171,7 @@ h2 {
 /* Isotope grid list of items. */
 
 .grid {
-  padding-bottom: 6em;
+  padding-bottom: 10em;
 }
 
 /* clear fix */
@@ -244,7 +249,7 @@ h2 {
 
 .thumbnail {
 /*  width: 21%;*/
-  width: 18%;
+  width: 26%;
   float: left;
   margin-right: 2%;
 }
@@ -281,7 +286,7 @@ h3 a:hover {
 }
 
 .publication {
-  margin-bottom: 0.5em;
+  margin-bottom: 1.0em;
 }
 
 .publication p {
@@ -291,9 +296,10 @@ h3 a:hover {
 }
 
 .project-description {
-  width: 80%;
+  width: 72%;
   float: left;
 }
+
 
 /**************************************************/
 /* Subtle footer at the bottom of the page. */
@@ -305,3 +311,21 @@ h3 a:hover {
   line-height: 2.5em;
 }
 
+h4 {
+  font-size: 1.4em;
+  line-height: 2.4em;
+  margin-top: 0.5em;
+  color: #150c21;
+} 
+
+.selected h4 {
+  color: #150c21;
+}
+
+
+.publication .caption {
+  color: #606060 ;      /* red */
+  font-family: 'Asap', roboto, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
