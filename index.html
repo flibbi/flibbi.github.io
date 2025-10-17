@@ -42,12 +42,8 @@
 
 	  I am a postdoctoral researcher in quantum physics in the <a href="https://mir.g.harvard.edu/">Materials Intelligence Research lab</a> at Harvard University. My research here focused on developing stochastic methods and novel integration schemes for solving integro-differential equations governing the quantum dynamics of solids. I am currently applying and fine-tuning graph neural network–based foundation models to significantly speed up the dynamics simulations. <br><br></p> 
 	  <p>
-	    I received my PhD at EPFL, where I applied density functional theory and many-body methods to study the optical, electronic, and transport properties of crystals. I additionally contributed to developing algorithms for quantum chemistry on superconducting quantum computers at IBM Quantum in Zurich.</p>
+	    I received my PhD at EPFL, where I applied density functional theory and many-body methods to study the optical, electronic, and transport properties of crystals. I additionally contributed to developing algorithms for quantum chemistry on superconducting quantum computers at IBM Research in Zurich.</p>
 
-            <div id="more-bio" style="display: None">
-              <br>
-              <p>Frances is a Staff Research Scientist at <a href="https://research.google/teams/robotics/">Google DeepMind</a> , where he leads a small team working on self-improving Foundation models in robotics. He received his Bachelors in Computer Science and Mathematics at <a href="https://www.berkeley.edu/">UC Berkeley</a>, and his PhD in Computer Science at <a href="https://www.princeton.edu/">Princeton</a>. He is interested in building algorithms that enable machines to intelligently interact with the world and improve themselves over time. Andy received Best Paper Awards from HRI '24, CoRL '23, ICRA '23, T-RO '20, RSS'19, and has been finalist for paper awards at RSS '23, CoRL '20 - '22, ICRA '20, RSS '19, IROS '18. He led machine learning as part of Team MIT-Princeton, winning 1st place (stow task) at the worldwide Amazon Picking Challenge '17. Andy is a recipient of the Princeton SEAS Award for Excellence, Japan Foundation Paper Award, NVIDIA Fellowship, and Gordon Y.S. Wu Fellowship in Engineering and Wu Prize. His work has been featured in the press, including the New York Times, BBC, and Wired.</p>
-            </div>
             <br>
             <!-- <a href="javascript:toggle_bio()">Formal Bio</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
             <a href="https://scholar.google.com/citations?user=rhblynsAAAAJ&hl=en&oi=ao">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -67,8 +63,8 @@
         <!-- <button class="button" data-filter="*">Show All</button> -->
         <!-- <button class="button" data-filter=".highlight">Highlights</button> -->
         <button class="button is-checked" data-filter=".publication">Research</button>
-        <button class="button" data-filter=".talk">Talks</button>
-        <button class="button" data-filter=".misc">Misc</button>
+        <button class="button" data-filter=".talk">Awards</button>
+        <button class="button" data-filter=".misc">Talks</button>
       </div>
 
       <div class="grid">
@@ -126,15 +122,20 @@
 
         <div id="main-highlights">
 
+	<div class="list-item publication" data-category="publication">
+	  <h4>Machine Learning &amp;  Molecular Dynamics</h4>
+	</div>
+
           <div class="list-item publication" data-category="publication">
-            <a href="https://video-language-planning.github.io/" class="thumbnail">
-              <img src="https://www.science.org/cms/10.1126/sciadv.adw1634/asset/d45090f1-e364-4440-a84c-42b1f2748c33/assets/images/large/sciadv.adw1634-f1.jpg" alt="" />
+            <a href="https://www.science.org/doi/full/10.1126/sciadv.adw1634" class="thumbnail">
+              <img src="images/science_adv.png" alt="" />
             </a>
             <div class="project-description">
               <h3><a href="https://www.science.org/doi/full/10.1126/sciadv.adw1634">Nonequilibrium Quantum Dynamics in SrTiO3 under Impulsive THz Radiation with Machine Learning</a></h3>
               <p>
                 Francesco Libbi, Anders Johansson, Boris Kozinsky, Lorenzo Monacelli <br> 
                   <i> Science Advances 11, eadw1634, 2025 </i><br>
+		  <span class="caption">I formulated a new theoretical framework for quantum molecular dynamics, integrating machine learning to model nonlinear responses in complex systems such as SrTiO₃. The formalism is implemented in an open-source Julia codebase optimized for MPI execution.</span><br>
                   <a href="sciadv.adw1634.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
                   <a href="https://github.com/NonequilibriumQuantumGaussianDynamics/QuantumGaussianDynamics.jl">Code</a>
               </p>
@@ -152,7 +153,10 @@
               <p>
 	         Francesco Libbi, Lorenzo Monacelli, Boris Kozinsky <br>
                   <i> ArXiv 2505.22791, 2025 </i><br>
-                  <a href="https://arxiv.org/pdf/2505.22791">PDF</a>
+		  <span class="caption">
+  I developed a formalism to model the time evolution of nuclear covariance matrices, showing that strong laser excitation of SrTiO₃ induces a sharp variance collapse that drives a structural phase transition. The formalism is implemented in an open-source Python codebase accelerated with PyTorch. </span><br>
+                  <a href="https://arxiv.org/pdf/2505.22791">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+		  <a href="https://github.com/NonequilibriumQuantumGaussianDynamics/TorchTDSCHA">Code</a>
               </p>
             </div>
           </div>
@@ -164,11 +168,37 @@
               <p>
 	         Francesco Libbi, Anders Johansson, Lorenzo Monacelli, Boris Kozinsky <br>
                   <i>npj Computational Materials 11, 102, 2025</i><br>
+		  <span class="caption">
+			  I addressed the challenging problem of solving Newton’s equations when forces are defined as high-dimensional integrals over internal variables. I developed a stochastic technique to evaluate these forces that conserves total energy regardless of the number of stochastic samples, and designed an integration scheme with O(Δt³) local error while minimizing the number of force evaluations. </span><br>
                   <a href="s41524-025-01588-4.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
                   <a href="https://github.com/NonequilibriumQuantumGaussianDynamics/QuantumGaussianDynamics.jl">Code</a>
               </p>
             </div>
           </div>
+
+
+          <div class="list-item publication" data-category="publication">
+            <a href="https://arxiv.org/abs/2504.13675" class="thumbnail">
+              <img src="images/cdw.png" alt="" />
+            </a>
+            <div class="project-description">
+              <h3><a href="https://arxiv.org/abs/2504.13675/">Exploring Charge Density Waves in Two-Dimensional NbSe2 with Machine Learning</a></h3>
+              <p>
+                Norma Rivano, Francesco Libbi, Chuin Wei Tan, Christopher Cheung, Jose Lado, Arash Mostofi, Philip Kim, Johannes Lischner, 
+                Adolfo O. Fumega, Boris Kozinsky, Zachary A. H. Goodwin<br>
+                   <i>arXiv 2504.13675, 2024</i><br>
+		   <span class="caption">An equivariant graph neural network is employed to learn the mechanical properties of NbSe₂, and is used to investigate the structural transformations that occur as the temperature is lowered down to absolute zero. </span><br>
+                  <a href="https://arxiv.org/pdf/2504.13675">PDF</a>
+                  <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+              </p>
+            </div>
+          </div>
+
+
+	<div class="list-item publication" data-category="publication">
+	  <h4>Optical, Electronic &amp; Thermal Properties</h4>
+	</div>
+
 
           <div class="list-item publication" data-category="publication">
             <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.128.167401" class="thumbnail"><img src="https://journals.aps.org/prl/article/10.1103/PhysRevLett.128.167401/figures/1/medium" alt="" /></a>
@@ -177,37 +207,12 @@
               <p>
                 Francesco Libbi, Pedro Miguel M. C. de Melo, Zeila Zanolli, Matthieu Verstraete, Nicola Marzari <br>
                   <i>Physical Review Letters 128, 167401, 2022</i><br>
+		  <span class='caption'>I employ an advanced perturbative formalism to solve many-operator partial differential equations and compute the optical properties of defects in two-dimensional materials, revealing promising applications in sensing.</span><br>
                   <a href="https://arxiv.org/pdf/2111.03518">PDF</a>
               </p>
             </div>
           </div>
 
-          <div class="list-item publication" data-category="publication">
-            <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043038#f7/" class="thumbnail"><img src="images/circuit_website.jpg" alt="" /></a>
-            <div class="project-description">
-              <h3><a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043038#f7/">Effective Calculation of the Green's Function in the Time Domain on Near-Term Quantum Processors</a></h3>
-              <p>
-                Francesco Libbi, Jacopo Rizzo, Francesco Tacchino, Nicola Marzari, Ivano Tavernelli<br>
-                  <i>Physical Review Research 4, 043038, 2022</i><br>
-
-                  <font color="49bf9"><i>&#9733; Internship in IBM Quantum, Zurich  &#9733;</i></font><br>
-                  <a href="PhysRevResearch.4.043038.pdf">PDF</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="list-item publication" data-category="publication">
-            <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043011" class="thumbnail"><img src="images/circuit_2.png" alt="" /></a>
-            <div class="project-description">
-              <h3><a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043011">One-particle Green's Functions from the Quantum Equation of Motion Algorithm</a></h3>
-              <p>
-	      Jacopo Rizzo, Francesco Libbi, Francesco Tacchino, Ivano Tavernelli, Nicola Marzari <br>
-                <i>Physical Review Research 4, 043011, 2018</i><br>
-                <font color="49bf9"><i>&#9733; Internship in IBM Quantum, Zurich  &#9733;</i></font><br>
-                  <a href="PhysRevResearch.4.043011.pdf">PDF</a>
-              </p>
-            </div>
-          </div>
 
 
           <div class="list-item publication" data-category="publication">
@@ -219,6 +224,7 @@
               <p>
 	      Francesco Libbi, Nicola Bonini, Nicola Marzari <br>
                   <i>2D Materials, 8 015026 2020</i><br>
+		  <span class='caption'>I developed and implemented a force field to model the energy of graphene and carbon nanotubes, optimizing its parameters by minimizing the energy error through a MSE loss function. The resulting force field accurately reproduces both the mechanical and thermal properties.</span><br>
                   <a href="https://arxiv.org/pdf/2008.05308">PDF</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
 		  <a href="https://archive.materialscloud.org/record/2020.164">Data</a>
                   <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
@@ -237,6 +243,7 @@
 	      Aitor Bergara, Francesco Mauri, Ion Errea <br>
                   <i>Nature Physics volume 20, pages 1288–1293, 2024</i><br>
                   <!-- <a href="https://video-language-planning.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
+		  <span class='caption'>In this work, I show that the exact symmetry constraints of graphene lead to a <i>q</i>⁴. dependence of the correlation function of its flexural mode. This result confirms that the mechanical behavior of graphene can be accurately described within the framework of membrane theory.</span><br>
                   <a href="https://arxiv.org/pdf/2005.12047">PDF</a>
                   <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
               </p>
@@ -252,27 +259,13 @@
               <p>
                 Enrico Di Lucente, Francesco Libbi, Nicola Marzari <br>
                   <i>arXiv 2501.16580, 2024</i><br>
+	          <span class='caption'>This work shows that, at the nanoscale, heat conduction obeys differential equations that share formal analogies with the Navier–Stokes equations, leading to the emergence of heat-vortex phenomena.</span><br>
                   <a href="https://arxiv.org/pdf/2501.16580">PDF</a>
                   <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
               </p>
             </div>
           </div>
 
-          <div class="list-item publication" data-category="publication">
-            <a href="https://arxiv.org/abs/2504.13675" class="thumbnail">
-              <img src="images/cdw.png" alt="" />
-            </a>
-            <div class="project-description">
-              <h3><a href="https://arxiv.org/abs/2504.13675/">Exploring Charge Density Waves in Two-Dimensional NbSe2 with Machine Learning</a></h3>
-              <p>
-                Norma Rivano, Francesco Libbi, Chuin Wei Tan, Christopher Cheung, Jose Lado, Arash Mostofi, Philip Kim, Johannes Lischner, 
-                Adolfo O. Fumega, Boris Kozinsky, Zachary A. H. Goodwin<br>
-                   <i>arXiv 2504.13675, 2024</i><br>
-                  <a href="https://arxiv.org/pdf/2504.13675">PDF</a>
-                  <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
-              </p>
-            </div>
-          </div>
 
           <div class="list-item publication" data-category="publication">
             <a href="https://arxiv.org/abs/2508.14852/" class="thumbnail">
@@ -283,6 +276,7 @@
               <p>
 	         Aleksandr Poliukhin, Nicola Colonna, Francesco Libbi, Samuel Poncé, Nicola Marzari<br>
                   <i>arXiv 2508.14852 2024</i><br>
+		  <span class='caption'>A new code is developed to compute the electron–phonon interaction using a general finite-difference approach applicable to any material. The method, grounded in the perturbation theory of generalized eigenvalue problems, is compatible with both semilocal and fully nonlocal exchange–correlation functionals.</span><br>
                   <a href="https://arxiv.org/pdf/2508.14852">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
                   <a href="https://github.com/Koulb/ElePhAny.jl/">Code</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
 		  <a href="https://archive.materialscloud.org/record/2025.131">Data</a>
@@ -293,6 +287,57 @@
 
 
         </div>
+
+	
+
+
+        <div class="list-item publication" data-category="publication">
+          <h4>Quantum Computing</h4>
+        </div>
+
+
+
+          <div class="list-item publication" data-category="publication">
+            <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043038#f7/" class="thumbnail"><img src="images/circuit_website.jpg" alt="" /></a>
+            <div class="project-description">
+              <h3><a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043038#f7/">Effective Calculation of the Green's Function in the Time Domain on Near-Term Quantum Processors</a></h3>
+              <p>
+                Francesco Libbi, Jacopo Rizzo, Francesco Tacchino, Nicola Marzari, Ivano Tavernelli<br>
+                  <i>Physical Review Research 4, 043038, 2022</i><br>
+		  <span class='caption'>I design a novel variational algorithm to solve quantum chemistry problems on current quantum computers. The algorithm minimizes the number of CNOT gates, the dominant source of noise, yielding results in excellent agreement with exact solutions.</span><br>
+                  <font color="49bf9"><i>&#9733; Internship in IBM Quantum, Zurich  &#9733;</i></font><br>
+                  <a href="PhysRevResearch.4.043038.pdf">PDF</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="list-item publication" data-category="publication">
+            <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043011" class="thumbnail"><img src="images/circuit_2.png" alt="" /></a>
+            <div class="project-description">
+              <h3><a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043011">One-particle Green's Functions from the Quantum Equation of Motion Algorithm</a></h3>
+              <p>
+	      Jacopo Rizzo, Francesco Libbi, Francesco Tacchino, Ivano Tavernelli, Nicola Marzari <br>
+                <i>Physical Review Research 4, 043011, 2018</i><br>
+		<span class='caption'>An alternative approach to solving quantum chemistry problems on current quantum computers is proposed, based on the quantum equation-of-motion (qEOM) algorithm.</span><br>
+                <font color="49bf9"><i>&#9733; Internship in IBM Quantum, Zurich  &#9733;</i></font><br>
+                  <a href="PhysRevResearch.4.043011.pdf">PDF</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="list-item publication" data-category="publication">
+            <a href="https://www.youtube.com/watch?v=Pjq2YUNtbAo" class="thumbnail"><img src="images/QCHS.png" alt="" /></a>
+            <div class="project-description">
+              <h3><a href="https://www.youtube.com/watch?v=Pjq2YUNtbAo">Quantum Computing Hard- and Software School 2021</a></h3>
+              <p>
+	      Francesco Libbi, Uwe Von Lüpke, Maxwell Drimmer, Bruno Schmitt <br>
+	      <span class='caption'> I co-led the organization of the 1st edition of the Quantum Computing Hard- and Software School (QCHS). Secured $20,000 in funding from grants and sponsors, attracting 600+ applications from researchers worldwide and 8,000+ views on YouTube.</span><br>
+                <i>Primary co-organizer, 600+ applications</i><br>
+                <font color="49bf9"><i>&#9733; 8000+ Viewes on YouTube  &#9733;</i></font><br>
+                  <a href="https://www.youtube.com/watch?v=Pjq2YUNtbAo">YouTube</a>
+              </p>
+            </div>
+          </div>
         
 
 
@@ -302,130 +347,14 @@
         </div> -->
 
         <div class="list-item talk" data-category="talk">
-          <p class="date">2024</p>UIUC <a href="https://publish.illinois.edu/csl-student-conference-2024">CSL Student Conference</a>
+		<p class="date">2018</p>Winner of the <a href="https://www.epfl.ch/education/phd/doctoral-studies-structure/customized-curricula/epflinnovators/">EPFLInnovators fellowship</a>.<br>
+	  Awarded $100,000 by the European Union Horizon’s 2020 to conduct cutting-edge scientific research.
         </div>
 
         <div class="list-item talk" data-category="talk">
-          <p class="date">2023</p>EMNLP Workshop on <a href="https://splu-robonlp-2023.github.io/">RoboNLP</a>
+		<p class="date">2023</p>Winner of the <a href="https://www.snf.ch/en/XIZpfY3iVS5KRRoD/funding/careers/postdoc-mobility">SNSF Postdoc Mobility Fellowship</a>.<br>
+	  Awarded $140,000 by the Swiss National Science Foundation (SNSF) to support advanced postdoctoral research abroad. Funding covered independent theoretical research, international collaboration, and career development in science.
         </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Cornell <a href="https://www.cs.cornell.edu/content/fall-2023-robotics-seminar">Robotics Seminar</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>MILA <a href="https://www.youtube.com/@MontrealRobotics">Robot Learning Seminar</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>UPenn <a href="https://www.grasp.upenn.edu/events/month/">GRASP SFI Seminar</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>RSS Workshop on <a href="https://sites.google.com/view/rss23-sym">Symmetries in Robot Learning</a> (<a href="https://youtu.be/E2l16T0biu4?t=8514">video</a>)
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>RSS Workshop on <a href="https://ai-workshops.github.io/interdisciplinary-exploration-of-gmpl/">Generalizable Manipulation Policy Learning: Paradigms and Debates</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>CVPR Workshop on <a href="https://scene-understanding.com/">3D Scene Understanding for Vision, Graphics, and Robotics</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>ICRA Workshop on <a href="https://sites.google.com/view/icra2023embracingcontacts/home">Embracing Contact: Making Robots Physically Interact with our World</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>ICRA Round-Table Discussion with Science Robotics
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>ICRA Workshop on <a href="https://life-long-learning-with-human-help-l3h2.github.io/">Life-Long Learning with Human Help</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Panel on Northwestern <a href="https://robotics.northwestern.edu/grand-challenges/">Grand Challenges in Robotics</a> (<a href="https://www.youtube.com/watch?v=Vj50Z7az3TY">video</a>)
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Guest Lecture at Columbia <a href="https://robotics.columbia.edu/content/courses">COMS 4733: Computational Aspects of Robotics</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Stanford <a href="https://svl.stanford.edu/">Vision and Learning Lab</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date">2022</p>CoRL Workshop on <a href="https://sites.google.com/view/langrob-corl22/">Language and Robot Learning</a> (<a href="https://www.youtube.com/watch?v=XQco1A6-RNI&t=18702s">video</a>)
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>NeurIPS Workshop on <a href="http://www.robot-learning.ml/2022/">Robot Learning</a> (<a href="https://youtu.be/nxFwcfEp0II">video</a>)
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>NeurIPS Workshop on <a href="https://aihabitat.org/challenge/2022_rearrange/">Habitat Rearrangement Challenge</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Guest Lecture at Columbia <a href="https://www.coursicle.com/columbia/courses/IEOR/E6617/">IEOR E6617: Machine Learning and High-Dimensional Data</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Princeton <a href="https://robo.princeton.edu/seminar">Robotics Seminar</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>RSS Workshop on <a href="https://imrss2022.github.io/">Implicit Representations</a> (<a href="https://youtu.be/ZIjNF39QKCI?list=PLfF8jFeyEb59OwSqCZM2RuW6VhPPFvK0s">video</a>)
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>CVPR Tutorial on <a href="https://sites.google.com/view/cvpr2022-robot-learning/">Vision-Based Robot Learning</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>MIT <a href="https://ei.csail.mit.edu/csl.html">CSL Seminar</a> (<a href="https://youtu.be/QX47jTL5XUM">video</a>)
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Guest Lecture at Columbia <a href="https://sites.google.com/view/spring2022-coms4733/home">COMS 4733: Computational Aspects of Robotics</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date">2021</p>CVPR Workshop on <a href="https://sites.google.com/view/cvpr2021-3d-vision-robotics">3D Vision and Robotics</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Guest Lecture at <a href="http://michaelryoo.com/course/cse525/">Stony Brook University CSE525: Introduction to Robotics</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Guest Lecture at <a href="https://www.coursicle.com/nyu/courses/CSCIUA/74/">NYU CSCI-UA 74: Big Ideas in Artificial Intelligence</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date">2020</p>RSS Workshop on <a href="https://www.brainlinks-braintools.uni-freiburg.de/rss-2020-workshop/">Self-Supervised Robot Learning</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>RSS Workshop on <a href="https://sites.google.com/stanford.edu/roboticsretrospectives/home">Robotics Retrospectives</a> (<a href="https://www.youtube.com/watch?v=rjMmsIN7B0A">video</a>)
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date">2019</p>Amazon Research <a href="https://www.amazon.jobs/pt/teams/amazon-robotics">Robotics Symposium</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date">2018</p>RE·WORK <a href="https://blog.re-work.co/deep-learning-for-robotics-ai-industrial-automation-summit-highlights/">Deep Learning for Robotics Summit</a>
-        </div>
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date"></p>Guest Lecture at NCTU Robotics Seminar: Robotic Manipulation
-        </div>
-
-
 
 
         <!-- Misc -->
@@ -696,7 +625,6 @@
 
       </div>
 
-      <div id="footer">Feel free to download this website's <a href="https://github.com/andyzeng/andyzeng.github.io">template</a>, just add a link back to my website. Inspired by <a href="https://jonbarron.info/">Jon's website</a>.</div>
 
     </div>
 
